@@ -46,6 +46,18 @@ Here is the picture after pencil edge
 <img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/pencil%20edge.PNG" width="500" height="300">
 </p>
 
+# Detail Enhancement Filter
+Enhancing image details without introducing artifacts has been attracting much attention in image processing community. Detail Enhancement filter gives a cartoon effect by sharpening the image, soothing the colours and enhancing the edges. First we convert the image into a grayscale image and then instead of using gaussian blur, median blur is applied. Adaptive threshold is then applied to detect the edges of the image. Finally, we use the result of adaptive threshold as a mask and then merge the result of detail enhancement based on the value of the mask to create a sharp effect with a well defined edge.
+
+The result:
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/64346030/109815435-a3606500-7c55-11eb-8cf2-47af016551de.png" width="500" height="300">
+</p>
+Image after Detail Enhancement Filter
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/64346030/109815427-a196a180-7c55-11eb-97c7-cc8c70fbd769.png" width="500" height="300">
+</p>
+
 ## Functionalities
 - [ ]  < insert functionality >
 - [ ]  < insert functionality >
@@ -96,14 +108,14 @@ Anushka Garg
 
 <td>
 
-John Doe
+Ankita Kokkera
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/template/blob/master/logo-light.png?raw=true"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
+<img src = "https://user-images.githubusercontent.com/64346030/109815968-37cac780-7c56-11eb-862f-408338278912.jpeg"  width="200" height="200" alt="Ankita">
 </p>
 <p align="center">
-<a href = "https://github.com/person2"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person2">
+<a href = "https://github.com/ankitasankars"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/ankita-k-4b943611a/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
