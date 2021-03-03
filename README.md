@@ -25,6 +25,26 @@ Image after Bilateral Filter
 
 # Pencil Sketch Filter
 Pencil Sketch converts our image into an image which appears to be sketched by pencil. So in order to apply Pencil sketch, we first use grayscale and gaussian Blur on our image and for the final sketched image, we divide the original grayscale image with the blurred grayscale image. Dividing the image gives us a ratio of change between each pixel of two images. The stronger the blurry effects, the more the value of each pixel changes with respect to its origin and hence, it gives us sharper pencil sketch.
+Below is a pictorial illustration.
+Here is the original picture:
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/tree/master/images" width="500" height="300">
+</p>
+Here is the picture after pencil sketch
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/pencil%20sketch.PNG" width="500" height="300">
+</p>
+
+# Pencil Edge Filter
+Pencil Edges filter creates a new image that contains only significant edges and white background. After grayscale and gaussian blur, we apply Laplacian filter to detect the edges.
+Here is the original picture:
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/tree/master/images" width="500" height="300">
+</p>
+Here is the picture after pencil edge
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/pencil%20edge.PNG" width="500" height="300">
+</p>
 
 ## Functionalities
 - [ ]  < insert functionality >
