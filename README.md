@@ -28,7 +28,7 @@ Pencil Sketch converts our image into an image which appears to be sketched by p
 Below is a pictorial illustration.
 Here is the original picture:
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/tree/master/images" width="500" height="300">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/scenery.PNG" width="500" height="300">
 </p>
 Here is the picture after pencil sketch
 <p align="center">
