@@ -58,6 +58,23 @@ Image after Detail Enhancement Filter
 <img src = "https://user-images.githubusercontent.com/64346030/109815427-a196a180-7c55-11eb-97c7-cc8c70fbd769.png" width="500" height="300">
 </p>
 
+# Discord Bot
+
+This Project has been deployed as a bot through Discord. The bot has be coded with Python and the bot runs on Repl.it server, Repl.it is an online code editor and has its own cloud storage for storing your Repositories which is really very helpful.  
+
+### Command's for the Bot :
+- The commands for the bot precede with ` $ `  sign and commands can be tagged with the `@username` of the person in the server.
+- ` $ filter1 ` Returns the Pencil Sketch of the profile picture of the user.
+- ` $ filter2 ` Returns the B/W Detail Enhanced profile picture of the user.
+- ` $ filter1 @username ` Returns the Pencil Sketch of the profile picture of the tagged person.
+- ` $ filter2 @username ` Returns the B/W Detail Enhanced profile picture of the tagged person.
+
+### Preview
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/d33d2f5fd7badb62c2eb289385bbfd089eeb7daa/images/discord%20preview.png" width="500" height="700">
+</p>
+
+
 ## Functionalities
 - [ ]  < insert functionality >
 - [ ]  < insert functionality >
@@ -121,7 +138,20 @@ Ankita Kokkera
 </p>
 </td>
 
+<td>
 
+Rakesh J
+
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/Rakesh.jpg"  width="200" height="200" alt="Rakesh">
+</p>
+<p align="center">
+<a href = "https://github.com/stagnito"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/rakesh-j-35174618b">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
 
 <td>
 
