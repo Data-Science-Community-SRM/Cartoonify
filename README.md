@@ -3,12 +3,14 @@
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
 	<h2 align="center"> Cartoonify </h2>
-	<h4 align="center"> < Insert Project Description Here > <h4>
+	<h4 align="center"> 
+	As you might know, sketching or creating a cartoon doesn’t always need to be done manually. Nowadays, many apps can turn your photos into cartoons. But what if I tell you, that you can create your own effect with few lines of code? Yes, Open CV as you know (or even if you don’t) is a very powerful tool with immense possibilities. It can be used to recognize objects, detect, and produce high-resolution images. In this project, we will show you how to give a cartoon-effect to an image in Python by utilizing OpenCV.</h4>
 </p>
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/README.md) 
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/discord%20preview.png)
+
 
 ## Preview
 # Bilateral Filter
