@@ -21,6 +21,11 @@ Image after Bilateral Filter
 <p align="center">
 <img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/anushka/images/taj_bilateral.jpg" width="500" height="300">
 </p>
+
+
+# Pencil Sketch Filter
+Pencil Sketch converts our image into an image which appears to be sketched by pencil. So in order to apply Pencil sketch, we first use grayscale and gaussian Blur on our image and for the final sketched image, we divide the original grayscale image with the blurred grayscale image. Dividing the image gives us a ratio of change between each pixel of two images. The stronger the blurry effects, the more the value of each pixel changes with respect to its origin and hence, it gives us sharper pencil sketch.
+
 ## Functionalities
 - [ ]  < insert functionality >
 - [ ]  < insert functionality >
