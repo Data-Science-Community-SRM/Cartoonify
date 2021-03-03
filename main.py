@@ -1,99 +1,61 @@
+from keep_alive import keep_alive
 import discord
 import os
-import requests
-import json
-import random
-from replit import db
+from discord.ext import commands
+from PIL import Image
+from io import BytesIO
+import asyncio
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage.io import imread, imshow
+from skimage.color import rgb2gray
+from skimage import img_as_uint
+from scipy.signal import convolve2d
+client = commands.Bot(command_prefix='$')
+kernel_edgedetection = np.array([[-1, -1, -1],
+                                 [-1, 8.5, -1],
+                                 [-1, -1, -1]])
 
 
-client = discord.Client()
-
-sad_words = ["sad", "depressed", "unhappy", "angry", "miserable"]
-
-starter_encouragements = [
-  "Cheer up",
-  "Everything is going to be fine",
-  "You are amazing",
-  "I believe in you!"
-]
-
-if "responding" not in db.keys():
-  db["responding"] = True
-
-def get_quote():
-  response = requests.get("https://zenquotes.io/api/random")
-  json_data = json.loads(response.text)
-  quote = json_data[0]['q'] +" -" + json_data[0]['a']
-  return(quote)
-
-def update_encouragments(encouraging_message):
-  if "encouragements" in db.keys():
-    encouragements = db["encouragements"]
-    encouragements.append(encouraging_message)
-    db["encouragements"] = encouragements
-
-  else:
-    db["encouragements"] = [encouraging_message]
-
-def delete_encouragment(index):
-  encouragements = db["encouragements"]
-  if len[encouragements] > index:
-    del encouragements[index]
-    db["encouragements"] = encouragements
+def dodgeV2(image, mask):
+    return cv2.divide(image, 255-mask, scale=256)
 
 
-@client.event
-async def on_ready():
-  print('We have logged in as {0.user}'.format(client))
+@client.command()
+async def filter1(ctx, user: discord.Member = None):
+    if user == None:
+        user = ctx.author
+    asset = user.avatar_url_as(size=128)
+    data = BytesIO(await asset.read())
+    pfp = Image.open(data)
+    #pfp=cv2.cvtColor(pfp, cv2.COLOR_BGR2GRAY)
+    pfp.save('profile.jpg')
+    image = cv2.imread('profile.jpg')
+    img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    img_gray_inv = 255 - img_gray
+    img_blur = cv2.GaussianBlur(
+        img_gray_inv, ksize=(21, 21), sigmaX=0, sigmaY=0)
+    final = dodgeV2(img_gray, img_blur)
+    cv2.imwrite('profile1.jpg', final)
+    await ctx.send(file=discord.File('profile1.jpg'))
 
-  @client.event
-  async def on_message(message):
-    if message.author == client.user:
-      return
 
-    msg = message.content
+@client.command()
+async def filter2(ctx, user: discord.Member = None):
+    if user == None:
+        user = ctx.author
+    asset = user.avatar_url_as(size=128)
+    data = BytesIO(await asset.read())
+    pfp = Image.open(data)
+    #pfp=cv2.cvtColor(pfp, cv2.COLOR_BGR2GRAY)
+    pfp.save('profile.jpg')
+    image = cv2.imread('profile.jpg')
+    morph_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    final = convolve2d(morph_gray, kernel_edgedetection)
 
-    if msg.startswith('$inspire'):
-      quote = get_quote()
-      await message.channel.send(quote)
+    cv2.imwrite('profile1.jpg', final)
+    await ctx.send(file=discord.File('profile1.jpg'))
 
-    if db["responding"]:
-      options = starter_encouragements
-      if "encouragements" in db.keys():
-        options = options + db["encouragements"]
-
-      if any(word in msg for word in sad_words):
-        await message.channel.send(random.choice(options))
-
-    if msg.startswith("$new"):
-      encouraging_message = msg.split("$new ", 1)[1]
-      update_encouragments(encouraging_message)
-      await message.channel.send("New encouraging message added.")
-
-    if msg.startswith("$del"):
-      encouragements = []
-      if "encouragements" in db.keys():
-        index = int(msg.split("$del", 1)[1])
-        delete_encouragment(index)
-        encouragements = db["encouragements"]
-
-      await message.channel.send(encouragements)
-  
-    if msg.startswith("$list"):
-      encouragements = []
-      if "encouragements" in db.keys():
-        encouragements = db["encouragements"]
-      await message.channel.send(encouragements)
-
-    if msg.startswith["$responding"]:
-      value = msg.split("responding ", 1)[1]
-
-      if value.lower() == "true":
-        db["responding"] = True
-        await message.channel.send("Responding is on.")
-
-      else:
-        db["responding"] = False
-        await message.channel.send("Responding is off.")
-
+keep_alive()
 client.run(os.getenv('TOKEN'))
