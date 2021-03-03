@@ -2,7 +2,7 @@
 <a href="https://dscommunity.in">
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
-	<h2 align="center"> < Insert Project Title Here > </h2>
+	<h2 align="center"> Cartoonify </h2>
 	<h4 align="center"> < Insert Project Description Here > <h4>
 </p>
 
@@ -11,7 +11,16 @@
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 
 ## Preview
-- Add pictures or important highlights from the Project (if any)
+# Bilateral Filter
+ Filtering is perhaps the most fundamental operation of image processing and computer vision. Bilateral Filter helps in smoothing and reducing all the noise from our image and also preserve the edges at the same time unlike gaussian blur. The weight is based on the Euclidean distance of pixels and also on radiometric differences such as color intensity, range etc.
+ This is our image:
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/anushka/images/taj.jpg" width="500" height="300">
+</p>
+Image after Bilateral Filter
+<p align="center">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/anushka/images/taj_bilateral.jpg" width="500" height="300">
+</p>
 ## Functionalities
 - [ ]  < insert functionality >
 - [ ]  < insert functionality >
@@ -46,14 +55,14 @@
 
 <td>
 
-John Doe
+Anushka Garg
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/template/blob/master/logo-light.png?raw=true"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/anushka/images/Anushka.jpeg" width="190" height="300">
 </p>
 <p align="center">
-<a href = "https://github.com/person1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person1">
+<a href = "https://github.com/anushkagarg5653"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/anushka-garg-b6759318a/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
