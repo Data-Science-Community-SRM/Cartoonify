@@ -75,31 +75,23 @@ This Project has been deployed as a bot through Discord. The bot has be coded wi
 </p>
 
 
-## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-
 <br>
 
 
-## Instructions to run
+# Instructions to Run
 
 * Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
-
-* < directions to install > 
-```bash
-< insert code >
-```
-
-* < directions to execute >
-
-```bash
-< insert code >
-```
+    - [ ] Python to understand the working of Filters.
+    - [ ] Discord Bot Commands.
+* Directions to Install: 
+	- [ ] Download the ZIP file of this repository to your local system.
+	- [ ] Create a repository in repl.it
+	- [ ] Insert the bot commands which are present in [main.py ](https://github.com/Data-Science-Community-SRM/cartoonify/blob/ae1dcad5bfb0926b34355685ac9e181d195056c7/main.py) file.
+	- [ ] Setup the flask app to keep the bot awake.
+* Directions to Execute:
+	- [ ]   Run the Repository on repl.it and setup [Up Time Robot](https://uptimerobot.com/), To keep the bot awake when you are away.
+	- [ ] Add the bot to your discord server.
+	- [ ] Now you can execute your commands.
 
 ## Contributors
 
