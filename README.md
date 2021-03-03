@@ -39,7 +39,7 @@ Here is the picture after pencil sketch
 Pencil Edges filter creates a new image that contains only significant edges and white background. After grayscale and gaussian blur, we apply Laplacian filter to detect the edges.
 Here is the original picture:
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/tree/master/images" width="500" height="300">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/scenery.PNG" width="500" height="300">
 </p>
 Here is the picture after pencil edge
 <p align="center">
