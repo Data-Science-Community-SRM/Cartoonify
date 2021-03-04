@@ -149,10 +149,10 @@ Rakesh J
 
 <td>
 
-Rusali
+Rusali Saha
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/Rusali.png"  width="200" height="200" alt="Rusali">
+<img src = "https://github.com/Data-Science-Community-SRM/cartoonify/blob/master/images/Rusali.png"  width="150" height="200" alt="Rusali">
 </p>
 <p align="center">
 <a href = "https://github.com/person3"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
